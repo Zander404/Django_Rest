@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from rest_framework.urlpatterns import format_suffix_patterns 
 from django.urls import path, include
-from drink import views
+
 
 
 # from tierlist import views
@@ -28,10 +28,7 @@ from drink import views
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', include(router.urls)),
-    # path('api-auth/', include('rest_framework.urls')),
-    path('drink/', include("drink.urls")),
-    path('food/', include("food.urls")),
+
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns) 
